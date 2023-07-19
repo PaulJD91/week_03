@@ -1,0 +1,24 @@
+{% extends "base.jinja" %} 
+{% block content %}
+<h1>{{ title }} !!!</h1>
+
+<form action="/tasks" method="post">
+<label for="title">Title</label>
+<input type="text" name="title" id="title" placeholder="Please put a title here">
+<label for="description">Description</label>
+<textarea name="description" id="description" cols="30" rows="2" placeholder="Please put a description here"></textarea>
+<input type="submit" value="Add Task"/>
+
+</form>
+
+<ul>
+  {% for task in tasks %}  
+    <li>
+      {{ task.title }}: <b>{{ task.description }}</b>
+      {% if task.done %}
+      <span> &#9989;</span>
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>
+{% endblock %}
