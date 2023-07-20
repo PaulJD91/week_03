@@ -8,23 +8,23 @@ table {
 .table td {
     border: 1px solid black;
     padding: 16px;
-    color: orangered;
+    color: black;
 }
 
 .table th {
-    color: blueviolet;
+    color: black;
 }
 
 body {
-    background-color: greenyellow;
+    background-color: lightblue;
 }
 
 h1 {
-    color: blueviolet;
+    color: black;
     font-size: 64px;
     text-decoration: underline;
 }
 
 .events_form > label {
-    color: orangered;
+    color: black;
 }
