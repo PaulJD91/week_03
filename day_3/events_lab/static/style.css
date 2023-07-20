@@ -12,5 +12,19 @@ table {
 }
 
 .table th {
-    color: purple;
+    color: blueviolet;
+}
+
+body {
+    background-color: greenyellow;
+}
+
+h1 {
+    color: blueviolet;
+    font-size: 64px;
+    text-decoration: underline;
+}
+
+.events_form > label {
+    color: orangered;
 }
